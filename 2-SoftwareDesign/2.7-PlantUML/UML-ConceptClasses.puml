@@ -1,1 +1,13 @@
+@startuml
+title Concept of Classes Diagram 
 
+Class Administrator
+Class SignatureForm
+Class SafetyDocuments
+
+
+Administrator"1" --> "*"SignatureForm : Create
+Administrator"1" --> "*"SafetyDocuments : Public
+SignatureForm"1" --o "1"SafetyDocuments
+
+@enduml
