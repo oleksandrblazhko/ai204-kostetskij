@@ -1,1 +1,34 @@
+@startuml
 
+title Example of Relation Schema
+
+hide circle
+
+entity "Worker" as t1 {
+    (PK) worker_id
+    --
+    First_name
+    Phone_number
+    Position
+    (FK)safetydoc_id
+}
+
+entity "Safetydoc" as t3 {
+    (PK)safetydoc_id
+    --
+    File
+    (FK) signatureForm_id
+}
+
+entity "SignatureForm" as t4 {
+    (PK) signatureForm_id
+    --
+    Sign
+    Commment
+}
+
+
+t1 --{ t3
+t3 --{ t4
+
+@enduml
