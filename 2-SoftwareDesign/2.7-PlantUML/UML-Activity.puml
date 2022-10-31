@@ -1,0 +1,14 @@
+@startuml
+title Conditional - Activity Diagram 
+
+start
+:The director chooses a section for analytics;
+:The system checks the availability of data for this section;
+if (Is the data available?) then (Yes)
+  :An analytical chart has been created!;
+else (No)
+  :There is no data for this section.;
+endif
+stop
+
+@enduml
