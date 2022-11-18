@@ -24,9 +24,9 @@ const Document = new Schema({
     comment: String
 })
 
-const Form = new Schema({
+const Analytics  = new Schema({
     id: int,
-    name: String,
+    section: String,
     description: String
 })
-module.export = Worker, Admin, Sign, Document, Form
+module.export = Worker, Admin, Sign, Document, Analytics
