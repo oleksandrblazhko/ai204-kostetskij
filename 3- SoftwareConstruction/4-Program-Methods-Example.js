@@ -2,15 +2,12 @@
 async function signatureAddForm (form_name, description) { //додавання форми для підпису
     if (form_name.length < 50 ) {        //перевірка назви на кількість символів
         return 1;
-    } else if ( count <= 0 ) {
-        return -1;
-    }
+    } else return -1;
 
     if (description.length > 30 ) {      //перевірка опису на кількість символів
         return 1;
-    } else if ( count <= 0 ) {
-        return -1;
-    }
+    } else return -1;
+    
 
     if (form_name.length == 1 || description.length == 1 ) { // повідомлення про створення форми, якщо задовольняють обидві умови
         alert("Форму успішно створено")
